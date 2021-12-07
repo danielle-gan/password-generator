@@ -60,10 +60,7 @@ var generatePassword = function() {
   };
 
   //check to make sure they have selected at least one prompt
-  if(promptCount >0) {
-    console.log("cool");
-  }
-  else {
+  if(promptCount < 0) {
     console.log("you need to select at least one prompt");
     return generatePassword();
   }
