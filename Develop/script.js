@@ -1,5 +1,19 @@
 // Assignment code here
 
+var generatePassword = function() {
+
+  // length of prompt
+
+  // lowercase?
+
+  // uppercase?
+
+  // numeric values?
+
+  // special characters?
+
+}
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
