@@ -60,10 +60,10 @@ var generatePassword = function() {
   };
 
   //check to make sure they have selected at least one prompt
-  if(promptCount < 0) {
+  if(promptCount <= 0) {
     console.log("you need to select at least one prompt");
     return generatePassword();
-  }
+  };
 
   // for loop to get random characters for the length of the password
 
