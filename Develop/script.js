@@ -9,7 +9,7 @@ var generatePassword = function() {
   let characters = [];
 
   if (passLength >= 8 && passLength <= 128) {
-    passLength = Math.floor(passLength)
+    passLength = Math.floor(passLength);
   } else if (passLength < 8) {
     window.alert("Your password needs to be at least 8 characters.")
     return generatePassword();
@@ -22,11 +22,11 @@ var generatePassword = function() {
   };
 
 
-  //prompt count to make sure they choose at least one of the following prompts
+  // initialize variable to keep track of prompt count
   var promptCount = 0;
 
   // lowercase?
-  let passLowercase = window.confirm("Do you want lowercase letters in your password?")
+  let passLowercase = window.confirm("Do you want lowercase letters in your password?");
 
   if(passLowercase) {
     promptCount = promptCount + 1;
@@ -34,7 +34,7 @@ var generatePassword = function() {
   };
 
   // uppercase?
-  let passUppercase = window.confirm("Do you want uppercase letters in your password?")
+  let passUppercase = window.confirm("Do you want uppercase letters in your password?");
   
   if(passUppercase) {
     promptCount = promptCount + 1;
@@ -42,7 +42,7 @@ var generatePassword = function() {
   };
 
   // numeric values?
-  let passNumeric = window.confirm("Do you want numeric values in your password?")
+  let passNumeric = window.confirm("Do you want numeric values in your password?");
 
   if(passNumeric) {
     promptCount = promptCount + 1;
@@ -51,7 +51,7 @@ var generatePassword = function() {
 
 
   // special characters?
-  let passSpecial = window.confirm("Do you want special characters in your password?")
+  let passSpecial = window.confirm("Do you want special characters in your password?");
 
   if (passSpecial) {
     promptCount = promptCount +1;
@@ -59,7 +59,6 @@ var generatePassword = function() {
   };
 
   //check to make sure they have selected at least one prompt
-  console.log(promptCount);
   if(promptCount <= 0) {
     let promptCondition = window.alert("You need to answer OK to at least one prompt");
       if(promptCondition) {
