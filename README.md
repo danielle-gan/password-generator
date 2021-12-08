@@ -21,6 +21,6 @@ A website that allows the user to create a randomly generated password based on 
 - JavaScript
 
 ## Screenshots & Link
-![Screenshot of Website](../Develop/SS-password-generator.png)
+![Screenshot of Website](./Develop/SS-password-generator.png "screenshot of webpage")
 
-[link](https://danielle-gan.github.io/password-generator/Develop/index.html) to Live Website
+[Link](https://danielle-gan.github.io/password-generator/Develop/index.html) to Live Website
