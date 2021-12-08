@@ -10,7 +10,6 @@ var generatePassword = function() {
 
   if (passLength >= 8 && passLength <= 128) {
     passLength = Math.floor(passLength)
-    console.log(passLength);
   } else if (passLength < 8) {
     window.alert("Your password needs to be at least 8 characters.")
     return generatePassword();
@@ -60,9 +59,15 @@ var generatePassword = function() {
   };
 
   //check to make sure they have selected at least one prompt
+  console.log(promptCount);
   if(promptCount <= 0) {
-    console.log("you need to select at least one prompt");
-    return generatePassword();
+    let promptCondition = window.alert("You need to answer OK to at least one prompt");
+      if(promptCondition) {
+        return generatePassword();
+      }
+      else {
+        return generatePassword();
+      };
   };
 
   // for loop to get random characters for the length of the password
@@ -71,7 +76,6 @@ var generatePassword = function() {
 
   for (i=0; i < passLength; i++) {
     password = password + characters[Math.floor(Math.random()*characters.length)];
-    console.log(password);
   };
 
   return password;
